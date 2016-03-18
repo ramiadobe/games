@@ -9,7 +9,7 @@ $(document).ready(function(){
 	{
 	  if(event.button==2)
 	   {
-	     alert(status);
+	     //alert(status);
 	     return false;    
 	   }
 	}
