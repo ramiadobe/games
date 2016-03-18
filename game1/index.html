@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>مجموعات الاعداد وخصائصها</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="author" content="Shaqdeeh">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <script src="bower_components/preloadjs-0.6.2.min/index.js"></script>
+  <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>  
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="bower_components/jquery.ui.touch-punch.min/index.js"></script>
+  <script src="bower_components/KineticJS/kinetic.js"></script>
+  <script src="bower_components/SoundManager2/script/soundmanager2.js"></script> 
+  <script src="bower_components/countdown360/dist/jquery.countdown360.js"></script>
+    <script type="text/javascript">
+
+	
+</script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="light">
+  <script src="js/scripts.js"></script>
+ 	<div class="isMobile">
+ 		<a href="http://www.shaqdeeh.com/a/edrak/games/g1/" target="_blank" id = "openNewWindow" class="round-btn">
+  		افتح اللعبة
+  	</a>
+ 	</div>
+  <div class="loading"></div>
+  <div class="stage">	  
+	  <div class="score"><span class="myscore">15</span><a hfref="#" class="theme"><i class="fa  fa-paint-brush"></i></a></div>
+	  <a class="pause"><i class="fa fa-pause"></i></a>
+	  <a class="sound"><i class="fa fa-volume-up sound-icon"></i></a>
+
+	  <div class="playArea">
+	  	<div id="real" class="dropTarget">
+	  		عدد نسبي
+	  	</div>
+	  	<div id="notreal" class="dropTarget">
+	  		عدد غير نسبي
+	  	</div>
+	  </div>
+
+  </div>
+  <!-- Start Screen -->
+  <div class="startScreen">
+  	<div class="startTxt">
+  		<h3 id="title">مجموعات الاعداد وخصائصها</h3>
+  		<p>اسحب العدد المناسب للمكان المناسب قبل انتهاء الوقت المحدد</p>
+  	</div>
+  	<a href="#" id = "startBtn" class="round-btn startBtn">
+  		ابدأ اللعب
+  	</a>
+  	<div class="logo">
+  		<p>© جميع الحقوق محفوظة ٢٠١٦ إدراك</p>
+  		<img src="img/logo.png" width="100" height="auto"/>
+  	</div>
+  </div><!-- End Start Screen -->
+
+  <!-- Pause Screen -->
+  <div class="pauseScreen">  
+
+  <center>
+  <div class="time">  
+        <span class="hms"></span>
+        <span class="ampm"></span>
+        <br>
+        <span class="date"></span>
+    </div>
+  </center>	
+  	<a href="#" class="continue round-btn startBtn">
+  		استمر
+  	</a>
+  	<a href="#" class="red-btn endgame round-btn startBtn">
+	  		إعادة اللعب <i class="fa fa-repeat"></i>
+	  	</a>
+  	<div class="logo">
+  		<p>© جميع الحقوق محفوظة ٢٠١٦ إدراك</p>
+  		<img src="img/logo.png" width="100" height="auto"/>
+  	</div>
+  </div><!-- End Pause Screen -->
+
+  <!-- End Screen -->
+	<div class="endScreen">
+		<div class="results">		
+		النتيجة: <span id="result">5/10</span>
+		</div>	 
+	  	<a href="#" class="endgame round-btn startBtn">
+	  		إعادة اللعب <i class="fa fa-repeat"></i>
+	  	</a>
+	  	<div class="logo">
+	  		<p>© جميع الحقوق محفوظة ٢٠١٦ إدراك</p>
+	  		<img src="img/logo.png" width="100" height="auto"/>
+	  	</div>
+	  </div>
+
+</body>
+</html>
