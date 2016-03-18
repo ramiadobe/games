@@ -3,16 +3,7 @@ $(document).ready(function(){
 	if ( self !== top ) {
 	  $(".isMobile").show();
 	}
-	document.onmousedown=disableclick;
-	status="Right Click Disabled";
-	function disableclick(event)
-	{
-	  if(event.button==2)
-	   {
-	     //alert(status);
-	     return false;    
-	   }
-	}
+	
 
 	var queue = new createjs.LoadQueue();
 	 queue.on("complete", handleComplete, this);
