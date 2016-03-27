@@ -405,7 +405,7 @@ $(document).ready(function(){
 	    var hr,
 	    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
 	        sec = (dateInfo.getSeconds() < 10) ? "0" + dateInfo.getSeconds() : dateInfo.getSeconds(),
-	        ampm = (dateInfo.getHours() >= 12) ? "مساءاً" : "صباحاً";
+	        ampm = (dateInfo.getHours() >= 12) ? "مساءً" : "صباحاً";
 
 	    // replace 0 with 12 at midnight, subtract 12 from hour if 13–23
 	    if (dateInfo.getHours() == 0) {
