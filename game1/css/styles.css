@@ -157,7 +157,7 @@ body.light{
 	text-align: center;
 	padding:10px;
 	width: calc(100% - 20px);
-	color: #666;
+	color: #666666 !important;
 }
 
 .logo img{
