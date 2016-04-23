@@ -129,6 +129,13 @@ $(document).ready(function(){
 		}
 	}
 
+	$("#howToPlay").on("click",function(){
+		$("#hwToPlay").show();
+	});
+	$("#closeHwToPlay").on("click",function(){
+		$("#hwToPlay").hide();
+	});
+
 	$(".rescue").on("click",function(){
 		console.log(_xCenter , randomExplrs[_eqNum][1][2] , _yCenter , randomExplrs[_eqNum][1][3] ,(Math.round(Math.tan(_cSlope)*100000)/100000) , randomExplrs[_eqNum][1][1]);
 		if(randomExplrs[_eqNum][1][0]=="y"){

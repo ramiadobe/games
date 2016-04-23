@@ -51,6 +51,7 @@ body {
 	font-size: 14px;
 	font-family: 'DroidArabicNaskhRegular', "Adobe Arabic";
 	background:#333;
+	overflow: hidden;
 }
 body.light{
 	background: #d5d5d5;
@@ -155,6 +156,10 @@ body.light{
 .startTxt{
 	text-align: center;
 	padding:5px 10px;
+	position: absolute;
+	top: 50%;
+	margin-top: -110px;
+	width:calc(100% - 20px);
 }
 
 .logo{
@@ -569,4 +574,24 @@ a.pause:hover, a.sound:hover{
     -webkit-border-radius: 50% !important;
 	border-radius: 50% !important;
 }
+#title{
+	font-size: 24px;
+}
+
+#hwToPlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #333 !important;
+	color: #fff;
+	text-align: center;
+	direction: rtl;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	display: none;
+}
+#hwToPlay ul{
+	text-align: right;
+	}
 
