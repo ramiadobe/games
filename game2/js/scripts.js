@@ -70,6 +70,7 @@ $(document).ready(function(){
 	    var styles = 'border: 1px solid green; '
 	               + 'width: ' + length + 'px; '
 	               + 'height: 0px; '
+	               + 'transform: rotate(' + angle + 'rad); '
 	               + '-moz-transform: rotate(' + angle + 'rad); '
 	               + '-webkit-transform: rotate(' + angle + 'rad); '
 	               + '-o-transform: rotate(' + angle + 'rad); '  
@@ -88,10 +89,11 @@ $(document).ready(function(){
 	function changeLine(x, y, length, angle, _c){
 				   _c.css('width',length);
 	               _c.css('height',0);
-	               _c.css('-moz-transform','rotate(' + angle + 'rad'); 
-	               _c.css('-webkit-transform','rotate(' + angle + 'rad'); 
-	               _c.css('-o-transform','rotate(' + angle + 'rad');   
-	               _c.css('-ms-transform','rotate(' + angle + 'rad');
+	               _c.css({'transform':'rotate(' + angle + 'rad)',
+	               	'-moz-transform':'rotate(' + angle + 'rad)',
+	               	'-webkit-transform':'rotate(' + angle + 'rad)',
+	               	'-o-transform':'rotate(' + angle + 'rad)',
+	               	'-ms-transform':'rotate(' + angle + 'rad)'});
 	               _c.css('top', y );
 	               _c.css('left', x );
 	}
